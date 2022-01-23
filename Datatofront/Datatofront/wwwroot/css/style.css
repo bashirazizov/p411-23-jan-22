@@ -1,0 +1,11 @@
+﻿body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.avatar{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    display:inline-block;
+    margin-bottom:20px
+}

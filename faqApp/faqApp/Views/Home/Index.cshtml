@@ -1,0 +1,21 @@
+﻿@model List<Faq>;
+
+<div class="container pt-5">
+    <div class="accordion" id="accordionExample">
+        @foreach (Faq faq in Model)
+        {
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@faq.Id" aria-expanded="true" aria-controls="collapseOne">
+                        @faq.Question
+                    </button>
+                </h2>
+                <div id="collapse-@faq.Id" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        @faq.Answer
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
